@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>Morpion</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Morpion</a>
+    </header>
+    <main>
+        <div id="startingScreen">
+            <ul class="settings">
+                <li>
+                    <label for="gamemode">Mode de jeu : </label>
+                    <select name="gamemode" id="gamemode">
+                        <option value="0" selected>Morpion</option>
+                        <option value="1">Puissance 4 (sans gravité)</option>
+                        <option value="2">Puissance 4</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="versus">Versus : </label>
+                    <select name="versus" id="versus">
+                        <option value="0" selected>Joueur (local)</option>
+                        <option value="1">Ordinateur</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="buttons">
+                <li onclick="start()">Commencer la partie</li>
+            </ul>
+        </div>
+        <div id="gameScreen" class="hidden">
+            <div>
+                <p id="gamemodeSummary">Mode de Jeu : </p>
+                <p id="versusSummary">Versus : </p>
+            </div>
+            <div id="grid">
+            </div>
+            <output id="logs"></output>
+            <button onclick="quit()">Leave</button>
+        </div>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

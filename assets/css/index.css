@@ -1,0 +1,126 @@
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    background-color: lightblue;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+header {
+    background-color: royalblue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border-width: 1px;
+}
+
+main > div {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    margin: auto;
+    padding: 10px;
+}
+
+#startingScreen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#startingScreen > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+ul.buttons li:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+#gameScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#gameScreen p {
+    margin: 0;
+}
+
+#grid td {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    line-height: 0;
+}
+
+#grid td img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#logs {
+    border: 1px dotted black;
+    padding: 2px;
+    width: 300px;
+}
+
+.hidden {
+    display: none !important;
+}
